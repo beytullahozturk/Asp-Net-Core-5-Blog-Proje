@@ -2,16 +2,23 @@
 
 <div class="comment-top">
     <h4>Yorumlar</h4>
-    @foreach (var item in Model)
-    {
-        <div class="media">
-            <img src="~/CoreBlogTema/images/t4.jpg" alt="" class="img-fluid pr-2 pt-2" />
-            <div class="media-body pt-3">
-                <h6 class="mt-0">@item.CommentUserName</h6>
-                <p>
-                    @item.CommentContent
-                </p>
+    @{
+
+        foreach (var item in Model)
+        {
+
+            <div class="media">
+                <img src="~/CoreBlogTema/images/t4.jpg" alt="" class="img-fluid pr-2 pt-2" />
+                <div class="media-body pt-3">
+                    <h6 class="mt-0">@item.CommentUserName</h6>
+                    <p>
+                        @item.CommentContent
+                    </p>
+                </div>
             </div>
-        </div>
+
+        }
+
     }
+
 </div>

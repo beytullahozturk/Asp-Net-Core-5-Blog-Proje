@@ -13,10 +13,11 @@ namespace EntityLayer.Concrete
         public int WriterId { get; set; }
         public string WriterName { get; set; }
         public string WriterAbout { get; set; }
-
         public string WriterImage { get; set; }
         public string WriterEmail { get; set; }
         public string WriterPassword { get; set; }
         public bool WriterStatus { get; set; }
+        public List<Blog> BLogs { get; set; }
+
     }
 }
